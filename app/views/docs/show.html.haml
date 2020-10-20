@@ -1,6 +1,7 @@
 %h1 Doc Show
 %p= @doc.title
 %p= @doc.content
+%p= @doc.user.email
 
 = link_to('All Docs', docs_path)
 = link_to('Edit Doc', edit_doc_path(@doc))
