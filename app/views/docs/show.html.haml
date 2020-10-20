@@ -1,3 +1,7 @@
 %h1 Doc Show
 %p= @doc.title
 %p= @doc.content
+
+= link_to('All Docs', docs_path)
+= link_to('Edit Doc', edit_doc_path(@doc))
+= link_to('Destroy Doc',doc_path(@doc), method: :delete, data: {confirm: "Are you sure?"})

@@ -1,3 +1,4 @@
+%h1= link_to('new doc', new_doc_path)
 = @docs.each do |doc|
     %h2= link_to doc.title, doc_path(doc)
     %p= time_ago_in_words(doc.created_at)
